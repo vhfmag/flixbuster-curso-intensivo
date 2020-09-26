@@ -1,0 +1,376 @@
+* {
+    box-sizing: border-box;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+body {
+    margin: 0;
+    color: white;
+    background-color: #1D2226;
+}
+
+body, input {
+    font-family: 'Manrope', sans-serif;
+}
+
+.cabecalho {
+    background-color: #0F1C26;
+    padding: 12px 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.cabecalho .centro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1278px;
+    width: 100%;
+}
+
+.cabecalho .centro .esquerda {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho input {
+    height: 56px;
+    background-color: #171B1E;
+    color: white;
+    border: 0;
+    padding: 12px;
+    flex: 0 1 456px;
+    width: 100%;
+}
+
+.cabecalho .input {
+    margin-left: 24px;
+    position: relative;
+}
+
+.cabecalho .input img {
+    position: absolute;
+    right: 12px;
+    top: 16px;
+}
+
+.cabecalho a {
+    display: flex;
+    color: white;
+    align-items: center;
+    text-decoration: none;
+}
+
+.cabecalho a img {
+    margin-right: 6px;
+}
+
+.cabecalho .usuario {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho .usuario img {
+    margin-left: 6px;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    padding: 24px 60px;
+}
+
+.conteudo .centro {
+    max-width: 1278px;
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.principal {
+    flex: 0 1 937px;
+}
+
+.sacola {
+    flex: 0 1 312px;
+}
+
+.banner {
+    font-family: 'Quantico', sans-serif;
+    position: relative;
+    color: black;
+}
+
+.banner > img {
+    width: 100%;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding: 6px 24px 12px;
+
+    display: flex;
+}
+
+.banner .coluna {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.banner .linha {
+    margin: 0 18px;
+    height: 46px;
+
+    opacity: 0.2;
+    align-self: center;
+    border-left: 1px solid #F294D8;
+}
+
+.banner .chamada, .banner .finaliza-em {
+    line-height: 150%;
+    text-transform: uppercase;
+}
+
+.banner .chamada {
+    font-size: 40px;
+}
+
+.banner .finaliza-em {
+    font-size: 24px;
+    padding-top: 18px;
+}
+
+.cupom, .contador {
+    display: flex;
+    align-items: center;
+}
+
+.cupom img, .contador img {
+    margin-right: 6px;
+}
+
+.dinheiro {
+    position: absolute;
+    right: 24px;
+    bottom: 0;
+    height: 120%;
+}
+
+.filmes {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: -10px;
+}
+
+.filmes li {
+    position: relative;
+    margin: 10px;
+    flex: 0 1 168px;
+}
+
+.filmes li > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.filmes li .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding: 6px;
+
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 25%);
+}
+
+.filmes li .overlay > img {
+    align-self: flex-start;
+}
+
+.filmes li .overlay .metadados {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.filmes li .overlay h3 {
+    margin: 0;
+}
+
+.filmes li .overlay .avaliacao {
+    color: #FBCD6E;
+    font-size: 12px;
+}
+
+.filmes li .overlay button {
+    background-color: #A785ED;
+    padding: 6px;
+    display: flex;
+    justify-content: space-between;
+    border: 0;
+    color: white;
+}
+
+.filtros {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.filtros button {
+    flex: 0 1 168px;
+    opacity: 0.2;
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+    padding: 6px 12px;
+    margin-right: 20px;
+}
+
+.filtros button:last-child {
+    margin-right: 0;
+}
+
+.filtros button.selecionado {
+    opacity: 1;
+    background-color: rgba(225, 131, 200, 0.2);
+    border-color: #E183C8;
+    color: #E183C8;
+}
+
+.sacola {
+    margin-left: 24px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.cabecalho-sacola {
+    background-color: #A785ED;
+    padding: 14px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.conteudo-sacola {
+    padding: 24px 12px;
+}
+
+.sacola-vazia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.sacola-vazia .titulo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.input-cupom {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-cupom span {
+    font-size: 12px;
+}
+
+.input-cupom div {
+    position: relative;
+}
+
+.input-cupom input {
+    background-color: #0B1217;
+    width: 100%;
+    border: 0;
+    height: 40px;
+    margin-top: 3px;
+    color: white;
+    padding: 6px;
+}
+
+.input-cupom img {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+}
+
+.itens-sacola {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 24px;
+}
+
+.itens-sacola li {
+    display: flex;
+    margin-top: 12px;
+}
+
+.itens-sacola li:first-child {
+    margin-top: 0;
+}
+
+.itens-sacola li > img {
+    height: 67px;
+    width: auto;
+    margin-right: 6px;
+}
+
+.itens-sacola li button {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+.itens-sacola li .acoes {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.itens-sacola li .acoes span {
+    margin: 0 6px;
+}
+
+.itens-sacola li .metadados {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sacola .comprar {
+    background-color: #E25EBF;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    border: 0;
+    width: 100%;
+    margin-top: 24px;
+    color: white;
+    font-weight: bold;
+}

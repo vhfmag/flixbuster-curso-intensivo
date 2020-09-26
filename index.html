@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flixbuster</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cabecalho">
+        <div class="centro">
+            <div class="esquerda">
+                <img src="imagens/logo.png" alt="Flixbuster">
+                <div class="input">
+                    <input placeholder="Pesquise filmes...">
+                    <img src="imagens/lupa.svg" alt="">
+                </div>
+            </div>
+
+            <a href="#">
+                <img src="imagens/bookmark.png" alt="">
+                Favoritos
+            </a>
+
+            <a href="#">
+                <img src="imagens/desconto.png" alt="">
+                Promoções
+            </a>
+
+            <div class="usuario">
+                Olá, Matheuso
+                <img src="imagens/matheuso.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="conteudo">
+        <div class="centro">
+            <div class="principal">
+                <div class="banner">
+                    <img src="imagens/fundo-cupom.png">
+                    <div class="banner-overlay">
+                        <div class="coluna">
+                            <div class="chamada">Aproveite agora</div>
+                            <div class="cupom">
+                                <img src="imagens/cupom.png">
+                                Cupom: HTMLNAOELINGUAGEM
+                            </div>
+                        </div>
+                        <div class="linha"></div>
+                        <div class="coluna">
+                            <div class="finaliza-em">Finaliza em</div>
+                            <div class="contador">
+                                <img src="imagens/contagem-regressiva.png">
+                                00:05:00
+                            </div>
+                        </div>
+
+                        <img class="dinheiro" src="imagens/dinheiro.png">
+                    </div>
+                </div>
+
+                <div class="listagem top">
+                    <h2>Top Filmes</h2>
+                    <ul class="filmes">
+                    </ul>
+                </div>
+
+                <div class="listagem geral">
+                    <h2>Filmes</h2>
+
+                    <div class="filtros">
+                        <button class="selecionado">Todos</button>
+                    </div>
+
+                    <ul class="filmes">
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sacola">
+                <div class="cabecalho-sacola">
+                    <img src="imagens/sacola.svg">
+                    Sacola
+                </div>
+                <div class="conteudo-sacola">
+                    <ul hidden class="itens-sacola">
+                    </ul>
+                    <div class="sacola-vazia">
+                        <div class="titulo">
+                            Sua sacola está vazia
+                        </div>
+                        <div class="subtitulo">
+                            Adicione filmes agora
+                        </div>
+                        <img src="imagens/sacola-vazia.svg">
+                    </div>
+                    <label class="input-cupom">
+                        <span>Insira seu cupom</span>
+                        <div>
+                            <input placeholder="Cupom de desconto">
+                            <img src="imagens/Ticket.png">
+                        </div>
+                    </label>
+
+                    <button hidden class="comprar">
+                        <span>Confirme seus dados</span>
+                        <span>R$ <span class="preco">4,98</span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
