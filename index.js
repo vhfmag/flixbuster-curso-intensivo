@@ -200,3 +200,27 @@ fetch("https://tmdb-proxy-workers.vhfmag.workers.dev/3/genre/movie/list?language
             });
         }
     });
+
+let minutosFaltando = 5;
+let segundosFaltando = 0;
+
+const elementoContagemRegressiva = document.querySelector(".contagem-regressiva");
+const idDoInterval = setInterval(() => {
+    segundosFaltando--;
+
+    if (segundosFaltando < 0) {
+        minutosFaltando--;
+        segundosFaltando = 59;
+    }
+
+    const minutos = minutosFaltando.toString().padStart(2, "0");
+    const segundos = segundosFaltando.toString().padStart(2, "0");
+
+    elementoContagemRegressiva.innerText = `00:${minutos}:${segundos}`;
+
+    if (minutosFaltando === 0 && segundosFaltando === 0) {
+        document.querySelector(".banner").remove();
+        clearInterval(idDoInterval);
+    }
+}, 1000);
+
